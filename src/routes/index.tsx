@@ -181,6 +181,28 @@ function Hero() {
 function Offers() {
   return (
     <section id="offers" className="offers" aria-labelledby="offers-title">
+      <svg className="offer-leaves offer-leaves-left" viewBox="0 0 150 250" aria-hidden="true">
+        <path d="M4 244C23 199 39 157 57 113C73 73 92 39 123 8" />
+        <path d="M36 166C25 142 16 123 5 105M51 130C74 113 91 98 105 77M68 91C58 67 51 49 44 30M84 62C103 51 120 43 141 39M22 202C42 189 57 179 69 166" />
+        <ellipse cx="13" cy="119" rx="11" ry="26" transform="rotate(-25 13 119)" />
+        <ellipse cx="31" cy="151" rx="12" ry="27" transform="rotate(-25 31 151)" />
+        <ellipse cx="48" cy="188" rx="11" ry="27" transform="rotate(52 48 188)" />
+        <ellipse cx="92" cy="89" rx="11" ry="27" transform="rotate(48 92 89)" />
+        <ellipse cx="51" cy="48" rx="10" ry="25" transform="rotate(-25 51 48)" />
+        <ellipse cx="122" cy="44" rx="10" ry="25" transform="rotate(64 122 44)" />
+        <ellipse cx="112" cy="20" rx="9" ry="22" transform="rotate(38 112 20)" />
+      </svg>
+      <svg className="offer-leaves offer-leaves-right" viewBox="0 0 150 250" aria-hidden="true">
+        <path d="M4 244C23 199 39 157 57 113C73 73 92 39 123 8" />
+        <path d="M36 166C25 142 16 123 5 105M51 130C74 113 91 98 105 77M68 91C58 67 51 49 44 30M84 62C103 51 120 43 141 39M22 202C42 189 57 179 69 166" />
+        <ellipse cx="13" cy="119" rx="11" ry="26" transform="rotate(-25 13 119)" />
+        <ellipse cx="31" cy="151" rx="12" ry="27" transform="rotate(-25 31 151)" />
+        <ellipse cx="48" cy="188" rx="11" ry="27" transform="rotate(52 48 188)" />
+        <ellipse cx="92" cy="89" rx="11" ry="27" transform="rotate(48 92 89)" />
+        <ellipse cx="51" cy="48" rx="10" ry="25" transform="rotate(-25 51 48)" />
+        <ellipse cx="122" cy="44" rx="10" ry="25" transform="rotate(64 122 44)" />
+        <ellipse cx="112" cy="20" rx="9" ry="22" transform="rotate(38 112 20)" />
+      </svg>
       <p className="offers-left-note">Live<br />Learn<br />Belong</p>
       <p className="offers-right-note">A Better<br />Place<br />To Be ♡</p>
       <div className="offer-heading">
