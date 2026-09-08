@@ -54,7 +54,7 @@
   --input: oklch(0.91 0.013 91);
   --ring: oklch(0.448 0.06 157);
   --gold: oklch(0.64 0.096 87);
-  --leaf: oklch(0.78 0.075 125 / 0.42);
+  --leaf: oklch(0.76 0.095 125 / 0.58);
 }
 
 @layer base {
@@ -139,11 +139,11 @@
 .offers::before, .offers::after { content: ""; position: absolute; width: 310px; height: 310px; border: 1px solid oklch(0.83 0.048 100 / .5); border-radius: 50%; }
 .offers::before { left: -250px; top: 20px; }
 .offers::after { right: -190px; top: 38px; }
-.offer-leaves { position: absolute; z-index: 1; width: 126px; height: 210px; color: var(--leaf); pointer-events: none; }
+.offer-leaves { position: absolute; z-index: 1; width: 138px; height: 226px; color: var(--leaf); pointer-events: none; }
 .offer-leaves path { fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; }
 .offer-leaves ellipse { fill: currentColor; transform-box: fill-box; transform-origin: center; }
-.offer-leaves-left { left: -42px; top: 82px; transform: rotate(-8deg); }
-.offer-leaves-right { right: -42px; top: 66px; transform: scaleX(-1) rotate(-12deg); }
+.offer-leaves-left { left: -39px; top: 78px; transform: rotate(-8deg); }
+.offer-leaves-right { right: -39px; top: 61px; transform: scaleX(-1) rotate(-12deg); }
 .offer-heading { text-align: center; }
 .offer-heading h2 { margin: 8px 0 4px; font-family: var(--font-serif); font-size: 35px; line-height: 1; letter-spacing: 0; }
 .offer-heading > span { color: var(--muted-foreground); font-family: Georgia, serif; font-size: 10px; }
