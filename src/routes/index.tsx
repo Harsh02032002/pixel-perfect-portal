@@ -182,27 +182,22 @@ function Offers() {
   return (
     <section id="offers" className="offers" aria-labelledby="offers-title">
       <svg className="offer-leaves offer-leaves-left" viewBox="0 0 200 400" aria-hidden="true">
-        <g className="leaf-shapes">
-          <path d="M96 372C40 352 6 300 14 236C22 172 66 128 128 108C124 178 122 246 108 300C102 326 100 350 96 372Z" />
-          <path d="M148 250C96 250 46 214 34 158C22 102 48 46 100 14C118 78 136 140 148 190C154 214 150 232 148 250Z" />
-          <path d="M8 330C-30 288 -34 224 -4 176C24 130 76 108 130 112C92 158 60 210 38 262C26 290 16 312 8 330Z" />
-        </g>
-        <g className="leaf-veins">
-          <path d="M128 108C118 178 108 262 96 372" />
-          <path d="M100 14C118 84 134 160 148 250" />
-        </g>
+        <defs>
+          <g id="roomhy-leaf">
+            <path className="leaf-blade" d="M0 -110C46 -62 62 -12 58 40C55 82 32 106 0 118C-32 106 -55 82 -58 40C-62 -12 -46 -62 0 -110Z" />
+            <path className="leaf-vein" d="M0 -104V112" />
+          </g>
+        </defs>
+        <use href="#roomhy-leaf" transform="translate(58 128) rotate(-24) scale(0.95)" />
+        <use href="#roomhy-leaf" transform="translate(24 254) rotate(-58) scale(0.8)" />
+        <use href="#roomhy-leaf" transform="translate(104 320) rotate(14) scale(0.68)" />
       </svg>
       <svg className="offer-leaves offer-leaves-right" viewBox="0 0 200 400" aria-hidden="true">
-        <g className="leaf-shapes">
-          <path d="M96 372C40 352 6 300 14 236C22 172 66 128 128 108C124 178 122 246 108 300C102 326 100 350 96 372Z" />
-          <path d="M148 250C96 250 46 214 34 158C22 102 48 46 100 14C118 78 136 140 148 190C154 214 150 232 148 250Z" />
-          <path d="M8 330C-30 288 -34 224 -4 176C24 130 76 108 130 112C92 158 60 210 38 262C26 290 16 312 8 330Z" />
-        </g>
-        <g className="leaf-veins">
-          <path d="M128 108C118 178 108 262 96 372" />
-          <path d="M100 14C118 84 134 160 148 250" />
-        </g>
+        <use href="#roomhy-leaf" transform="translate(58 128) rotate(-24) scale(0.95)" />
+        <use href="#roomhy-leaf" transform="translate(24 254) rotate(-58) scale(0.8)" />
+        <use href="#roomhy-leaf" transform="translate(104 320) rotate(14) scale(0.68)" />
       </svg>
+
 
       <p className="offers-left-note">Live<br />Learn<br />Belong</p>
       <p className="offers-right-note">A Better<br />Place<br />To Be ♡</p>
