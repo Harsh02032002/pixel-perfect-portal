@@ -142,8 +142,8 @@
 .offer-leaves { position: absolute; z-index: 1; width: 232px; height: 400px; color: var(--leaf); pointer-events: none; overflow: visible; }
 .offer-leaves .leaf-blade { fill: currentColor; opacity: .55; }
 .offer-leaves .leaf-vein { fill: none; stroke: oklch(0.63 0.08 132 / 0.45); stroke-width: 2.5; stroke-linecap: round; }
-.offer-leaves-left { left: -86px; top: 132px; transform: rotate(-6deg); }
-.offer-leaves-right { right: -86px; top: 108px; transform: scaleX(-1) rotate(-9deg); }
+.offer-leaves-left { left: -46px; top: 118px; transform: rotate(-6deg); }
+.offer-leaves-right { right: -46px; top: 96px; transform: scaleX(-1) rotate(-9deg); }
 
 .offer-heading { text-align: center; }
 .offer-heading h2 { margin: 8px 0 4px; font-family: var(--font-serif); font-size: 35px; line-height: 1; letter-spacing: 0; }
