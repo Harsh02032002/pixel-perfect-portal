@@ -139,11 +139,12 @@
 .offers::before, .offers::after { content: ""; position: absolute; width: 310px; height: 310px; border: 1px solid oklch(0.83 0.048 100 / .5); border-radius: 50%; }
 .offers::before { left: -250px; top: 20px; }
 .offers::after { right: -190px; top: 38px; }
-.offer-leaves { position: absolute; z-index: 1; width: 138px; height: 226px; color: var(--leaf); pointer-events: none; }
-.offer-leaves path { fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; }
-.offer-leaves ellipse { fill: currentColor; transform-box: fill-box; transform-origin: center; }
-.offer-leaves-left { left: -39px; top: 78px; transform: rotate(-8deg); }
-.offer-leaves-right { right: -39px; top: 61px; transform: scaleX(-1) rotate(-12deg); }
+.offer-leaves { position: absolute; z-index: 1; width: 232px; height: 400px; color: var(--leaf); pointer-events: none; overflow: visible; }
+.offer-leaves .leaf-shapes path { fill: currentColor; opacity: .5; }
+.offer-leaves .leaf-veins path { fill: none; stroke: oklch(0.62 0.075 132 / 0.5); stroke-width: 2; stroke-linecap: round; }
+.offer-leaves-left { left: -86px; top: 132px; transform: rotate(-6deg); }
+.offer-leaves-right { right: -86px; top: 108px; transform: scaleX(-1) rotate(-9deg); }
+
 .offer-heading { text-align: center; }
 .offer-heading h2 { margin: 8px 0 4px; font-family: var(--font-serif); font-size: 35px; line-height: 1; letter-spacing: 0; }
 .offer-heading > span { color: var(--muted-foreground); font-family: Georgia, serif; font-size: 10px; }
@@ -200,9 +201,9 @@
   .assurance strong { font-size: 8px; }
   .assurance small { font-size: 6.5px; }
   .offers { padding-top: 32px; }
-  .offer-leaves { width: 82px; height: 160px; opacity: .76; }
-  .offer-leaves-left { left: -55px; top: 126px; }
-  .offer-leaves-right { right: -55px; top: 112px; }
+  .offer-leaves { width: 150px; height: 260px; opacity: .8; }
+  .offer-leaves-left { left: -74px; top: 150px; }
+  .offer-leaves-right { right: -74px; top: 130px; }
   .offer-heading { padding-inline: 20px; }
   .offer-heading h2 { font-size: 31px; }
   .view-all { position: static; display: flex; margin: 14px auto; }
