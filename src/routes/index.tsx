@@ -3,6 +3,9 @@ import {
   ArrowRight,
   BadgeIndianRupee,
   BedDouble,
+  Heart,
+  Star,
+  CheckCircle2,
   Building2,
   ChevronDown,
   Headphones,
@@ -225,6 +228,76 @@ function Offers() {
   );
 }
 
+const featured = [
+  {
+    name: "Sunrise Student PG",
+    location: "Koramangala, Bengaluru",
+    price: "₹8,499",
+    rating: "4.8",
+    image: pgImage,
+    type: "PG",
+  },
+  {
+    name: "Campus Nest Hostel",
+    location: "Powai, Mumbai",
+    price: "₹7,999",
+    rating: "4.7",
+    image: hostelImage,
+    type: "Hostel",
+  },
+  {
+    name: "Urban Hive Co-living",
+    location: "Hinjewadi, Pune",
+    price: "₹11,499",
+    rating: "4.9",
+    image: colivingImage,
+    type: "Co-living",
+  },
+  {
+    name: "Greenview Apartments",
+    location: "Sector 62, Noida",
+    price: "₹14,999",
+    rating: "4.6",
+    image: apartmentImage,
+    type: "Apartment",
+  },
+];
+
+function Featured() {
+  return (
+    <section className="featured" aria-labelledby="featured-title">
+      <div className="featured-heading">
+        <p>Handpicked for you</p>
+        <h2 id="featured-title">Featured Properties</h2>
+        <span>Discover verified spaces in the most popular student cities.</span>
+      </div>
+      <Button variant="outline" className="featured-view-all">View all properties <ArrowRight /></Button>
+      <div className="featured-grid">
+        {featured.map(({ name, location, price, rating, image, type }) => (
+          <article className="featured-card" key={name}>
+            <div className="featured-image-wrap">
+              <img src={image} alt={`${name} — ${type} in ${location}`} width={900} height={560} loading="lazy" />
+              <span className="verified-chip"><CheckCircle2 /> Verified</span>
+              <button type="button" className="wishlist-button" aria-label={`Save ${name} to wishlist`}><Heart /></button>
+            </div>
+            <div className="featured-body">
+              <div className="featured-title-row">
+                <h3>{name}</h3>
+                <span className="featured-rating"><Star fill="currentColor" /> {rating}</span>
+              </div>
+              <p className="featured-location"><MapPin /> {location}</p>
+              <div className="featured-price-row">
+                <span className="featured-price">{price}<small>/month</small></span>
+                <span className="featured-type">{type}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Index() {
-  return <main><Header /><Hero /><Offers /></main>;
+  return <main><Header /><Hero /><Offers /><Featured /></main>;
 }
