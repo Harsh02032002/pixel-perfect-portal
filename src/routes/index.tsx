@@ -187,8 +187,8 @@ function Offers() {
       <svg className="offer-leaves offer-leaves-left" viewBox="0 0 200 400" aria-hidden="true">
         <defs>
           <g id="roomhy-leaf">
-            <path className="leaf-blade" d="M0 -110C46 -62 62 -12 58 40C55 82 32 106 0 118C-32 106 -55 82 -58 40C-62 -12 -46 -62 0 -110Z" />
-            <path className="leaf-vein" d="M0 -104V112" />
+            <path fill="rgba(140, 180, 120, 0.38)" d="M0 -110C46 -62 62 -12 58 40C55 82 32 106 0 118C-32 106 -55 82 -58 40C-62 -12 -46 -62 0 -110Z" />
+            <path fill="none" stroke="rgba(110, 150, 100, 0.45)" strokeWidth="2.5" strokeLinecap="round" d="M0 -104V112" />
           </g>
         </defs>
         <use href="#roomhy-leaf" transform="translate(58 128) rotate(-24) scale(0.95)" />
