@@ -4,7 +4,6 @@ import {
   BadgeIndianRupee,
   BedDouble,
   Heart,
-  MapPin as MapPinIcon,
   Star,
   CheckCircle2,
   Building2,
